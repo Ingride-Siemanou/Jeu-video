@@ -21,8 +21,8 @@
         <nav class="navigation">
             <ul>
                 <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#jeux">Nos jeux</a></li>
                 <li><a href="#studio">Le studio</a></li>
+                <li><a href="#jeux">Nos jeux</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -60,8 +60,17 @@
     </div>
 </section>
 
-<section class="jeux">
+<section class="studio" id="studio">
+    <h2>QUI SOMMES NOUS ?</h2>
+    <p>Au cœur de l'industrie vidéoludique contemporaine, JEU<span>VID</span> s'affirme bien au-delà de la simple structure de développement : c'est un véritable sanctuaire créatif, un laboratoire d'idées bouillonnant où la passion viscérale pour l'art interactif rencontre l'exigence technique la plus pointue. Fondé par un collectif d'adeptes du code, de concepteurs visionnaires et d'artistes pluridisciplinaires, notre studio est né d'une conviction inébranlable : le jeu vidéo est le véhicule ultime de l'imaginaire humain, capable de transcender le simple loisir pour devenir une expérience existentielle inoubliable.</p>
+    <p>Notre démarche artistique et technique repose sur une exigence absolue de qualité et d'authenticité. Qu'il s'agisse de concevoir des fresques narratives aux embranchements complexes, d'ériger des architectures cyberpunk labyrinthiques baignées de lueurs ténébreuses, ou d'explorer les tréfonds de récits psychologiques oppressants, chaque projet est traité comme une œuvre d'art totale. Nous sculptons nos mondes virtuels avec la même minutie qu'un orfèvre, associant des technologies graphiques de pointe à une direction artistique percutante, des ambiances sonores envoûtantes et des mécaniques de jeu organiques qui épousent intuitivement les réflexes du joueur.</p>
+    <p>Chez JEU<span>VID</span>, nous refusons la standardisation et la facilité. Nous croyons fermement que les plus grands souvenirs de joueurs naissent de la prise de risque, de l'audace créative et de la sincérité des émotions partagées. C'est pourquoi chaque personnage à qui nous donnons vie, chaque dialogue que nous ciselons et chaque pan de décor que nous érigeons est pensé pour résonner profondément en vous. Nous voulons que nos mondes respirent, qu'ils réagissent à vos choix, et que chaque session de jeu devienne un voyage intime dont vous sortirez transformé, marqué par l'intensité des péripéties vécues.</p>
+    <p>Regardant résolument vers l'avenir, JEU<span>VID</span> poursuit une trajectoire sans compromis. Portés par un enthousiasme inépuisable — et soutenus par de généreuses tasses de café nocturnes —, nous continuons de repousser les frontières de ce qu'il est possible de raconter et de ressentir manette ou clavier en main. Notre promesse est simple mais exigeante : continuer à bâtir des univers d'une richesse rare, des refuges virtuels où vous aimerez vous perdre, explorer et vous réinventer. L'aventure ne fait que commencer, et c'est avec vous, notre communauté, que nous écrivons les plus beaux chapitres de notre histoire.</p>
+</section>
 
+<section class="jeux" id="jeux">
+   <h2>NOS JEUX</h2>
+   <br>
   <article id="cyberpunk">
     <h1>Cyberpunk 2077</h1>
     <p>
@@ -121,7 +130,22 @@
 
 </section>
 
-<footer class="footer">© 2026 JEU VID </footer>
+<footer class="footer">
+    <section id="Contact">
+        <h2>Contacter Nous</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" required>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <p>© 2026 JEU VID </p>
+</footer>
 
 </body>
 </html>
