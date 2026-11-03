@@ -90,6 +90,10 @@ button {
     align-items: center;
     padding: 100px 0;
     background-color: var(--color-background);
+    background-image: url("../image/jeu video.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -124,4 +128,78 @@ button {
 .footer {
     text-align: center;
     margin-bottom: 20px;
+}
+
+.jeux {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.jeux article {
+    background-color: var(--color-surface);
+    border: 1px solid #292933;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.jeux article:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+}
+
+.jeux article h1 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: var(--color-primary);
+}
+
+.jeux article figure {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.jeux article img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.jeux article:hover img {
+    transform: scale(1.05);
+}
+
+.jeux article p {
+    color: var(--color-text-muted);
+    font-size: 15px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+.jeux article footer {
+    color: var(--color-secondary);
+    font-size: 13px;
+    border-top: 1px solid #292933;
+    padding-top: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .jeux {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .jeux article figure {
+        height: 220px;
+    }
 }
