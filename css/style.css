@@ -90,7 +90,7 @@ button {
     align-items: center;
     padding: 100px 0;
     background-color: var(--color-background);
-    background-image: url("../image/jeu video.jpg");
+    background-image: url("../image/jeu-video.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ button {
 
 .hero-description {
     max-width: 550px;
-    color: var(--color-text-muted);
+    color: white;
     font-size: 17px;
     margin-bottom: 35px;
 }
@@ -202,4 +202,105 @@ button {
     .jeux article figure {
         height: 220px;
     }
+}
+
+.studio {
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 50px;
+    background-color: var(--color-surface);
+    border: 1px solid #292933;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.08);
+}
+
+.studio h2 {
+    color: var(--color-primary);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+    letter-spacing: 2px;
+}
+
+.studio p {
+    color: var(--color-text-muted);
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.studio p span {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.footer #Contact {
+    width: 90%;
+    max-width: 700px;
+    margin: 80px auto 50px;
+    padding: 40px;
+    background-color: var(--color-surface);
+    border: 1px solid #292933;
+    border-radius: 15px;
+}
+
+.footer #Contact h2 {
+    color: var(--color-primary);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer #Contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer #Contact label {
+    color: var(--color-text);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.footer #Contact input,
+.footer #Contact textarea {
+    width: 100%;
+    padding: 13px;
+    background-color: var(--color-background);
+    border: 1px solid #393945;
+    border-radius: 8px;
+    color: var(--color-text);
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.footer #Contact input:focus,
+.footer #Contact textarea:focus {
+    border-color: var(--color-primary);
+}
+
+.footer #Contact textarea {
+    resize: vertical;
+}
+
+.footer #Contact button {
+    padding: 14px;
+    margin-top: 10px;
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer #Contact button:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-3px);
 }
