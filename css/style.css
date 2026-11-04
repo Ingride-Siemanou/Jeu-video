@@ -304,3 +304,27 @@ button {
     background-color: var(--color-secondary);
     transform: translateY(-3px);
 }
+
+/* =================================
+   BOUTON HERO
+================================= */
+
+.hero-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+    transform: translateY(-4px);
+    box-shadow: 0 5px 20px rgba(139, 92, 246, 0.3);
+}
